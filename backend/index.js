@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 const app = express();
 const port = 4000;
 
-mongoose.connect("mongodb://localhost:27017/myKeeperAppDB");
+mongoose.connect("mongodb+srv://pratikshansuvarna:18KeeperApp23@mykeeperappdb.wp2yc65.mongodb.net/myKeeperAppDB?retryWrites=true&w=majority");
 
 const keeperSchema = mongoose.Schema({
     title: String,
