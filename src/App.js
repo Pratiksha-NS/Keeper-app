@@ -18,7 +18,7 @@ export default function App() {
   }
 
   function deleteItem(id) {
-    axios.post("http://localhost:4000/api/delete", { id: id })
+    axios.post("https://keeper-app-backend-i8m4.onrender.com/api/delete", { id: id })
       .then(res => {
         setNotes(res.data);
       })
@@ -28,7 +28,7 @@ export default function App() {
   }
 
   useEffect(() =>{
-    axios.get("http://localhost:4000/api/getAll")
+    axios.get("https://keeper-app-backend-i8m4.onrender.com/api/getAll")
     .then(res => setNotes(res.data))
   },
   [])
