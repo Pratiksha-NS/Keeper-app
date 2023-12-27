@@ -30,7 +30,7 @@ function CreateArea(props) {
         content:""
        });
       try {
-        await axios.post("http://localhost:4000/api/addNew", note  )
+        await axios.post("https://keeper-app-backend-i8m4.onrender.com/api/addNew", note  )
          .then(res => console.log(res))
       } catch (error) {
         console.log(error);
